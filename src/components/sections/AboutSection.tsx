@@ -5,24 +5,24 @@ import { useScrollAnimation, fadeInUp, fadeInLeft, fadeInRight, staggerContainer
 import { Scale, Users, Award, Target } from "lucide-react";
 
 const stats = [
-    { icon: Scale, value: "500+", label: "Kasus Ditangani", description: "Berbagai bidang hukum" },
-    { icon: Users, value: "50+", label: "Klien Korporat", description: "Perusahaan nasional & multinasional" },
-    { icon: Award, value: "15+", label: "Tahun Pengalaman", description: "Sejak 2008" },
-    { icon: Target, value: "98%", label: "Tingkat Keberhasilan", description: "Kepuasan klien" },
+    { icon: Scale, value: "100%", label: "Komitmen Penuh", description: "Dedikasi untuk setiap klien" },
+    { icon: Users, value: "Tim Pro", label: "Advokat Berpengalaman", description: "Background di firma ternama" },
+    { icon: Award, value: "Modern", label: "Pendekatan Inovatif", description: "Solusi hukum terkini" },
+    { icon: Target, value: "24/7", label: "Responsif", description: "Selalu siap melayani" },
 ];
 
 const values = [
     {
         title: "Integritas",
-        description: "Kami menjunjung tinggi kejujuran dan etika profesi dalam setiap layanan hukum yang kami berikan.",
+        description: "Kejujuran dan etika profesi adalah fondasi utama dalam setiap layanan yang kami berikan.",
     },
     {
-        title: "Profesionalisme",
-        description: "Tim kami terdiri dari advokat berpengalaman dengan keahlian di berbagai bidang hukum.",
+        title: "Inovasi",
+        description: "Pendekatan hukum modern dengan memanfaatkan teknologi untuk solusi yang lebih efektif.",
     },
     {
         title: "Dedikasi",
-        description: "Kami berkomitmen penuh untuk memperjuangkan hak dan kepentingan klien kami.",
+        description: "Setiap klien adalah prioritas. Kami berkomitmen penuh untuk hasil terbaik.",
     },
 ];
 
@@ -40,7 +40,6 @@ export function AboutSection() {
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-crimson/5 rounded-full blur-[100px]" />
 
             <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                {/* Section Header */}
                 <motion.div
                     variants={fadeInUp}
                     initial="hidden"
@@ -52,11 +51,11 @@ export function AboutSection() {
                         Tentang Kami
                     </span>
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-deep-black mb-6">
-                        Firma Hukum Terpercaya di Indonesia
+                        Semangat Baru, Dedikasi Penuh
                     </h2>
                     <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                        Harun Prayitno & Partners adalah firma hukum terkemuka yang didirikan dengan visi
-                        untuk memberikan solusi hukum berkualitas tinggi kepada individu dan perusahaan.
+                        Harun Prayitno & Partners hadir dengan visi segar untuk memberikan
+                        layanan hukum berkualitas tinggi dengan pendekatan yang personal dan modern.
                     </p>
                 </motion.div>
 
@@ -70,23 +69,22 @@ export function AboutSection() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
                         <h3 className="text-2xl font-bold text-deep-black mb-6">
-                            Sejarah & Filosofi Kami
+                            Visi & Filosofi Kami
                         </h3>
                         <div className="space-y-4 text-muted-foreground">
                             <p>
-                                Didirikan pada tahun 2008 oleh Harun Prayitno, S.H., M.H., firma kami
-                                berawal dari tekad untuk memberikan akses keadilan yang merata bagi
-                                semua kalangan masyarakat.
+                                Didirikan oleh Harun Prayitno, S.H., M.H., firma kami lahir dari
+                                semangat untuk menghadirkan praktik hukum yang lebih personal,
+                                responsif, dan berorientasi pada solusi.
                             </p>
                             <p>
-                                Dengan pengalaman lebih dari 15 tahun, kami telah menangani berbagai
-                                kasus hukum mulai dari sengketa perdata, pidana, hingga hukum korporasi
-                                dan bisnis internasional.
+                                Tim kami terdiri dari para profesional hukum dengan pengalaman
+                                solid di berbagai firma hukum terkemuka. Kami membawa keahlian
+                                tersebut dengan pendekatan yang lebih personal dan fleksibel.
                             </p>
                             <p>
-                                Tim kami terdiri dari para advokat senior yang berpengalaman dan
-                                berdedikasi tinggi untuk memperjuangkan kepentingan klien dengan
-                                pendekatan yang strategis dan solusi yang efektif.
+                                Kami percaya bahwa setiap klien layak mendapatkan perhatian penuh
+                                dan strategi hukum yang disesuaikan dengan kebutuhan spesifik mereka.
                             </p>
                         </div>
 
@@ -132,12 +130,12 @@ export function AboutSection() {
                                         <Scale className="w-10 h-10 text-gold" />
                                     </div>
                                     <h4 className="text-2xl font-bold mb-4">
-                                        &ldquo;Keadilan untuk Semua&rdquo;
+                                        &ldquo;Membangun Kepercayaan, Satu Klien pada Satu Waktu&rdquo;
                                     </h4>
                                     <p className="text-white/80 leading-relaxed">
-                                        Kami percaya bahwa setiap orang berhak mendapatkan pembelaan
-                                        hukum yang berkualitas. Komitmen ini yang mendorong kami untuk
-                                        terus berkembang dan memberikan layanan terbaik.
+                                        Kami memulai perjalanan ini dengan keyakinan bahwa layanan
+                                        hukum yang berkualitas harus dapat diakses oleh semua orang.
+                                        Dedikasi penuh adalah janji kami kepada setiap klien.
                                     </p>
                                     <div className="mt-8 pt-6 border-t border-white/20">
                                         <p className="font-semibold">Harun Prayitno, S.H., M.H.</p>

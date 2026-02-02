@@ -7,34 +7,34 @@ import { Star } from "lucide-react";
 
 const testimonials = [
     {
-        quote: "Harun Prayitno & Partners membantu kami menyelesaikan sengketa bisnis yang rumit dengan hasil yang memuaskan. Profesionalisme dan dedikasi tim mereka luar biasa.",
+        quote: "Sangat terkesan dengan pendekatan personal tim Harun Lawfirm. Mereka benar-benar mendengarkan dan memahami kebutuhan bisnis kami. Responsif dan profesional!",
         name: "Budi Santoso",
         title: "CEO, PT Maju Bersama",
     },
     {
-        quote: "Saya sangat puas dengan layanan konsultasi hukum yang diberikan. Mereka menjelaskan setiap aspek hukum dengan jelas dan memberikan solusi yang tepat.",
+        quote: "Pertama kali menggunakan jasa Harun Lawfirm untuk konsultasi kontrak bisnis. Penjelasannya sangat jelas dan solusinya tepat sasaran. Pasti akan kembali lagi!",
         name: "Siti Rahayu",
         title: "Direktur, CV Cahaya Abadi",
     },
     {
-        quote: "Tim HPP sangat membantu dalam proses akuisisi perusahaan kami. Ketelitian dan pengalaman mereka dalam hukum korporasi tidak diragukan lagi.",
+        quote: "Respons cepat dan tidak ribet! Yang saya suka dari Harun Lawfirm adalah mereka selalu available ketika dibutuhkan. Sangat membantu untuk startup seperti kami.",
         name: "Ahmad Hidayat",
-        title: "Managing Director, PT Global Investama",
+        title: "Founder, Tech Startup",
     },
     {
-        quote: "Dalam kasus perceraian saya yang sensitif, HPP memberikan pendampingan hukum dengan empati dan profesionalisme tinggi. Terima kasih atas dukungannya.",
+        quote: "Tim Harun Lawfirm memberikan pendampingan yang sangat personal dalam kasus saya. Mereka benar-benar peduli dan tidak hanya mengejar target. Terima kasih!",
         name: "Diana Putri",
         title: "Pengusaha",
     },
     {
-        quote: "Kami telah bekerja sama dengan HPP selama 5 tahun untuk semua kebutuhan hukum perusahaan. Respons cepat dan solusi yang selalu tepat sasaran.",
+        quote: "Pendekatan modern dan efisien. Senang sekali menemukan firma hukum yang mengerti kebutuhan bisnis zaman sekarang. Highly recommended!",
         name: "Irwan Wijaya",
-        title: "Legal Manager, PT Teknologi Nusantara",
+        title: "Business Owner",
     },
     {
-        quote: "HPP membantu kami dalam pengurusan sertifikat tanah yang bermasalah. Proses yang tadinya rumit menjadi lancar berkat bantuan mereka.",
+        quote: "Harun Lawfirm membantu kami dengan masalah legalitas usaha. Prosesnya transparan dan biayanya reasonable. Tim yang jujur dan dapat dipercaya.",
         name: "Rina Marlina",
-        title: "Pemilik Properti",
+        title: "Pengusaha UMKM",
     },
 ];
 
@@ -86,8 +86,8 @@ export function TestimonialsSection() {
                                 <Star key={i} className="w-6 h-6 fill-gold text-gold" />
                             ))}
                         </div>
-                        <p className="text-3xl font-bold text-deep-black">4.9/5.0</p>
-                        <p className="text-sm text-muted-foreground">Berdasarkan 200+ review</p>
+                        <p className="text-3xl font-bold text-deep-black">5.0/5.0</p>
+                        <p className="text-sm text-muted-foreground">Rating dari klien awal kami</p>
                     </div>
                 </motion.div>
 
@@ -107,7 +107,7 @@ export function TestimonialsSection() {
                     />
                 </motion.div>
 
-                {/* Trust Badges */}
+                {/* Why Choose Us */}
                 <motion.div
                     variants={fadeInUp}
                     initial="hidden"
@@ -117,16 +117,15 @@ export function TestimonialsSection() {
                 >
                     <div className="mx-auto max-w-4xl">
                         <p className="text-center text-sm text-muted-foreground mb-6">
-                            Dipercaya oleh perusahaan dan institusi terkemuka
+                            Mengapa klien memilih kami
                         </p>
-                        <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-16 opacity-50">
-                            {/* Placeholder for client logos */}
-                            {["Bank Indonesia", "Pertamina", "Telkom", "PLN", "Garuda Indonesia"].map((name) => (
+                        <div className="flex flex-wrap justify-center items-center gap-6 lg:gap-12">
+                            {["Responsif 24/7", "Biaya Transparan", "Pendekatan Personal", "Tim Profesional", "Solusi Modern"].map((item) => (
                                 <div
-                                    key={name}
-                                    className="text-lg font-bold text-deep-black/40"
+                                    key={item}
+                                    className="text-sm font-medium text-deep-black/70 px-4 py-2 bg-white rounded-full shadow-sm border border-border"
                                 >
-                                    {name}
+                                    {item}
                                 </div>
                             ))}
                         </div>

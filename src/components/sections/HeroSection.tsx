@@ -41,23 +41,23 @@ export function HeroSection() {
                             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white/90 text-sm font-medium mb-6"
                         >
                             <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
-                            Firma Hukum Terpercaya Sejak 2008
+                            Pendekatan Hukum Modern & Profesional
                         </motion.div>
 
                         <motion.h1
                             variants={staggerItem}
                             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
                         >
-                            Mitra Terpercaya untuk{" "}
-                            <span className="text-gold">Solusi Hukum</span> Anda
+                            Solusi Hukum{" "}
+                            <span className="text-gold">Inovatif</span> untuk Masa Depan Anda
                         </motion.h1>
 
                         <motion.p
                             variants={staggerItem}
                             className="text-lg text-white/80 leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0"
                         >
-                            Bimbingan hukum profesional untuk kebutuhan personal dan bisnis Anda.
-                            Mari bangun kasus terkuat bersama tim ahli kami.
+                            Kami hadir dengan semangat baru dan dedikasi tinggi untuk memberikan
+                            layanan hukum berkualitas. Kepercayaan Anda adalah prioritas utama kami.
                         </motion.p>
 
                         <motion.div
@@ -84,20 +84,19 @@ export function HeroSection() {
                             className="grid grid-cols-3 gap-8 mt-12 pt-12 border-t border-white/10"
                         >
                             <div>
-                                <div className="text-3xl sm:text-4xl font-bold text-gold">15+</div>
-                                <div className="text-sm text-white/60 mt-1">Tahun Pengalaman</div>
+                                <div className="text-3xl sm:text-4xl font-bold text-gold">100%</div>
+                                <div className="text-sm text-white/60 mt-1">Komitmen Klien</div>
                             </div>
                             <div>
-                                <div className="text-3xl sm:text-4xl font-bold text-gold">500+</div>
-                                <div className="text-sm text-white/60 mt-1">Kasus Ditangani</div>
+                                <div className="text-3xl sm:text-4xl font-bold text-gold">24/7</div>
+                                <div className="text-sm text-white/60 mt-1">Siap Melayani</div>
                             </div>
                             <div>
-                                <div className="text-3xl sm:text-4xl font-bold text-gold">98%</div>
-                                <div className="text-sm text-white/60 mt-1">Tingkat Kepuasan</div>
+                                <div className="text-3xl sm:text-4xl font-bold text-gold">Pro</div>
+                                <div className="text-sm text-white/60 mt-1">Tim Berpengalaman</div>
                             </div>
                         </motion.div>
                     </motion.div>
-
                     {/* Right Content - Partner Image */}
                     <motion.div
                         variants={fadeInRight}

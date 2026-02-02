@@ -88,7 +88,7 @@ export function Footer() {
                             </div>
                             <div className="flex items-center gap-3 text-sm text-white/70">
                                 <Mail className="h-4 w-4 text-gold flex-shrink-0" />
-                                <span>info@hpplaw.co.id</span>
+                                <span>info@harunlaw.co.id</span>
                             </div>
                             <div className="flex items-center gap-3 text-sm text-white/70">
                                 <Clock className="h-4 w-4 text-gold flex-shrink-0" />

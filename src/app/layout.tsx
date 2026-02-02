@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Harun Prayitno & Partners | Firma Hukum Terpercaya",
     description: "Firma hukum terkemuka di Indonesia dengan pengalaman lebih dari 15 tahun.",
-    url: "https://hpplaw.co.id",
+    url: "https://harunlaw.co.id",
     siteName: "Harun Prayitno & Partners",
     locale: "id_ID",
     type: "website",

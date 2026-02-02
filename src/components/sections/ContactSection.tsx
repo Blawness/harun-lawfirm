@@ -24,8 +24,8 @@ const contactInfo = [
     {
         icon: Mail,
         label: "Email",
-        value: "info@hpplaw.co.id",
-        href: "mailto:info@hpplaw.co.id",
+        value: "info@harunlaw.co.id",
+        href: "mailto:info@harunlaw.co.id",
     },
     {
         icon: MapPin,

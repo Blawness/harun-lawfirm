@@ -37,8 +37,8 @@ export function Navbar() {
                 className={cn(
                     "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
                     isScrolled
-                        ? "bg-white/80 backdrop-blur-xl shadow-lg shadow-black/5 dark:bg-deep-black/80"
-                        : "bg-transparent"
+                        ? "bg-white backdrop-blur-xl shadow-lg shadow-black/10"
+                        : "bg-gradient-to-b from-black/40 to-transparent"
                 )}
             >
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -52,7 +52,7 @@ export function Navbar() {
                                     viewBox="0 0 100 100"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
-                                    className="text-crimson"
+                                    className={isScrolled ? "text-crimson" : "text-white drop-shadow-lg"}
                                 >
                                     {/* Decorative top element */}
                                     <path
@@ -99,13 +99,13 @@ export function Navbar() {
                             <div className="flex flex-col">
                                 <span className={cn(
                                     "text-lg font-bold tracking-tight transition-colors",
-                                    isScrolled ? "text-crimson" : "text-white"
+                                    isScrolled ? "text-crimson" : "text-white drop-shadow-md"
                                 )}>
                                     HARUN PRAYITNO
                                 </span>
                                 <span className={cn(
-                                    "text-xs font-medium tracking-widest transition-colors",
-                                    isScrolled ? "text-gold" : "text-gold-light"
+                                    "text-xs font-semibold tracking-widest transition-colors",
+                                    isScrolled ? "text-gold" : "text-gold drop-shadow-md"
                                 )}>
                                     & PARTNERS
                                 </span>
@@ -119,10 +119,10 @@ export function Navbar() {
                                     key={link.name}
                                     href={link.href}
                                     className={cn(
-                                        "text-sm font-medium transition-colors hover:text-gold",
+                                        "text-sm font-semibold transition-all duration-200",
                                         isScrolled
-                                            ? "text-foreground"
-                                            : "text-white/90 hover:text-white"
+                                            ? "text-deep-black hover:text-crimson"
+                                            : "text-white drop-shadow-md hover:text-gold"
                                     )}
                                 >
                                     {link.name}
@@ -135,7 +135,8 @@ export function Navbar() {
                             <Button
                                 variant={isScrolled ? "default" : "outline"}
                                 className={cn(
-                                    !isScrolled && "border-white text-white hover:bg-white hover:text-crimson"
+                                    "font-semibold",
+                                    !isScrolled && "border-2 border-white text-white hover:bg-white hover:text-crimson shadow-lg"
                                 )}
                             >
                                 <Phone className="h-4 w-4" />
