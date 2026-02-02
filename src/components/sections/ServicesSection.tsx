@@ -7,9 +7,6 @@ import {
     Building2,
     Gavel,
     Home,
-    Users,
-    Shield,
-    FileText,
     ArrowRight
 } from "lucide-react";
 import Link from "next/link";
@@ -33,24 +30,7 @@ const services = [
         description: "Layanan hukum properti mencakup jual beli, sewa, dan sengketa tanah dengan pendekatan komprehensif.",
         features: ["Jual Beli Properti", "Sertifikasi Tanah", "Sengketa Lahan"],
     },
-    {
-        icon: Users,
-        title: "Hukum Keluarga",
-        description: "Pendampingan hukum untuk masalah keluarga seperti perceraian, hak asuh anak, dan pembagian harta.",
-        features: ["Perceraian", "Hak Asuh Anak", "Waris"],
-    },
-    {
-        icon: Shield,
-        title: "Hukum Pidana",
-        description: "Pembelaan hukum pidana dengan pendekatan strategis untuk melindungi hak-hak klien di setiap tahap proses.",
-        features: ["Pembelaan Pidana", "Pendampingan Penyidikan", "Banding"],
-    },
-    {
-        icon: FileText,
-        title: "Kontrak & Perjanjian",
-        description: "Penyusunan, review, dan negosiasi kontrak bisnis untuk melindungi kepentingan klien.",
-        features: ["Drafting Kontrak", "Due Diligence", "Negosiasi"],
-    },
+
 ];
 
 export function ServicesSection() {

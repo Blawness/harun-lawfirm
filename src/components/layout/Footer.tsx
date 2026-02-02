@@ -8,9 +8,6 @@ const footerLinks = {
         { name: "Hukum Korporasi", href: "#services" },
         { name: "Litigasi", href: "#services" },
         { name: "Hukum Properti", href: "#services" },
-        { name: "Hukum Keluarga", href: "#services" },
-        { name: "Hukum Pidana", href: "#services" },
-        { name: "Konsultasi Bisnis", href: "#services" },
     ],
     perusahaan: [
         { name: "Tentang Kami", href: "#about" },
@@ -35,7 +32,11 @@ const socialLinks = [
 
 export function Footer() {
     return (
-        <footer className="bg-deep-black text-white">
+        <footer className="bg-gradient-to-br from-crimson via-crimson-dark to-deep-black text-white relative overflow-hidden">
+            {/* Background decoration */}
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay" />
+            <div className="absolute -top-24 -right-24 w-96 h-96 bg-gold/10 rounded-full blur-[100px]" />
+            <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-black/40 rounded-full blur-[100px]" />
             {/* Main Footer */}
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
@@ -80,15 +81,15 @@ export function Footer() {
                         <div className="space-y-3">
                             <div className="flex items-center gap-3 text-sm text-white/70">
                                 <MapPin className="h-4 w-4 text-gold flex-shrink-0" />
-                                <span>Jl. Sudirman No. 123, Jakarta Pusat 10220</span>
+                                <span>Gedung Yarnati Lt. 4, Jl. Proklamasi No. 44, Menteng, Jakarta Pusat 10320</span>
                             </div>
                             <div className="flex items-center gap-3 text-sm text-white/70">
                                 <Phone className="h-4 w-4 text-gold flex-shrink-0" />
-                                <span>+62 21 1234 5678</span>
+                                <span>(021) 3928018</span>
                             </div>
                             <div className="flex items-center gap-3 text-sm text-white/70">
                                 <Mail className="h-4 w-4 text-gold flex-shrink-0" />
-                                <span>info@harunlaw.co.id</span>
+                                <span>harunprayitnoandpartners@gmail.com</span>
                             </div>
                             <div className="flex items-center gap-3 text-sm text-white/70">
                                 <Clock className="h-4 w-4 text-gold flex-shrink-0" />

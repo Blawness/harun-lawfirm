@@ -10,27 +10,26 @@ import {
     Mail,
     MapPin,
     Clock,
-    Send,
-    MessageCircle
+    Send
 } from "lucide-react";
 
 const contactInfo = [
     {
         icon: Phone,
         label: "Telepon",
-        value: "+62 21 1234 5678",
-        href: "tel:+622112345678",
+        value: "(021) 3928018",
+        href: "tel:0213928018",
     },
     {
         icon: Mail,
         label: "Email",
-        value: "info@harunlaw.co.id",
-        href: "mailto:info@harunlaw.co.id",
+        value: "harunprayitnoandpartners@gmail.com",
+        href: "mailto:harunprayitnoandpartners@gmail.com",
     },
     {
         icon: MapPin,
         label: "Alamat",
-        value: "Jl. Sudirman No. 123, Jakarta Pusat 10220",
+        value: "Gedung Yarnati Lt. 4, Jl. Proklamasi No. 44, Menteng, Jakarta Pusat 10320",
         href: "#",
     },
     {
@@ -167,29 +166,7 @@ export function ContactSection() {
                             ))}
                         </div>
 
-                        {/* WhatsApp CTA */}
-                        <div className="bg-gradient-to-br from-crimson to-crimson-dark rounded-2xl p-8 text-white mt-auto">
-                            <div className="flex items-center gap-4 mb-4">
-                                <div className="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-sm flex items-center justify-center">
-                                    <MessageCircle className="w-7 h-7" />
-                                </div>
-                                <div>
-                                    <h4 className="text-lg font-bold">Konsultasi Cepat</h4>
-                                    <p className="text-white/70 text-sm">via WhatsApp</p>
-                                </div>
-                            </div>
-                            <p className="text-white/80 text-sm mb-6">
-                                Butuh respons cepat? Hubungi kami langsung melalui WhatsApp
-                                untuk konsultasi awal gratis.
-                            </p>
-                            <Button
-                                size="lg"
-                                className="w-full bg-white text-crimson hover:bg-white/90 hover:text-crimson-dark"
-                            >
-                                <MessageCircle className="w-4 h-4" />
-                                Chat via WhatsApp
-                            </Button>
-                        </div>
+
 
                         {/* Map placeholder */}
                         <div className="mt-8 rounded-2xl overflow-hidden border border-border h-48 bg-muted">
