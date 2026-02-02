@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand Colors */
+  --crimson: 147 17 23;
+  --crimson-dark: 122 14 19;
+  --gold: 179 127 52;
+  --gold-light: 200 155 79;
+  --off-white: 250 250 250;
+  --deep-black: 17 17 17;
+
+  /* Semantic Colors */
+  --background: 250 250 250;
+  --foreground: 17 17 17;
+  --muted: 245 245 245;
+  --muted-foreground: 115 115 115;
+  --border: 229 229 229;
+  --ring: 147 17 23;
+}
+
+.dark {
+  --background: 17 17 17;
+  --foreground: 250 250 250;
+  --muted: 38 38 38;
+  --muted-foreground: 163 163 163;
+  --border: 64 64 64;
+  --ring: 179 127 52;
+}
+
+@theme inline {
+  --color-background: rgb(var(--background));
+  --color-foreground: rgb(var(--foreground));
+  --color-muted: rgb(var(--muted));
+  --color-muted-foreground: rgb(var(--muted-foreground));
+  --color-border: rgb(var(--border));
+  --color-ring: rgb(var(--ring));
+
+  /* Brand Colors */
+  --color-crimson: rgb(var(--crimson));
+  --color-crimson-dark: rgb(var(--crimson-dark));
+  --color-gold: rgb(var(--gold));
+  --color-gold-light: rgb(var(--gold-light));
+  --color-off-white: rgb(var(--off-white));
+  --color-deep-black: rgb(var(--deep-black));
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+  border-color: rgb(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(var(--background));
+  color: rgb(var(--foreground));
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--crimson));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--crimson-dark));
+}
+
+/* Selection */
+::selection {
+  background: rgba(147, 17, 23, 0.2);
+  color: rgb(var(--crimson));
+}
+
+/* Focus Ring */
+*:focus-visible {
+  outline: 2px solid rgb(var(--ring));
+  outline-offset: 2px;
+}
+
+/* Glassmorphism Utility */
+.glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.dark .glass {
+  background: rgba(17, 17, 17, 0.8);
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, rgb(var(--crimson)) 0%, rgb(var(--gold)) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animated Border */
+@keyframes border-beam {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-border-beam {
+  animation: border-beam 3s linear infinite;
+}
+
+/* Infinite scroll animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 12px));
+  }
+}
+
+.animate-scroll {
+  animation: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+}
