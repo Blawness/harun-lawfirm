@@ -6,6 +6,7 @@ import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import Image from "next/image";
 
 const navLinks = [
     { name: "Beranda", href: "#hero" },
@@ -45,56 +46,17 @@ export function Navbar() {
                     <div className="flex h-20 items-center justify-between">
                         {/* Logo */}
                         <Link href="/" className="flex items-center gap-3">
-                            <div className="relative">
-                                <svg
-                                    width="48"
-                                    height="48"
-                                    viewBox="0 0 100 100"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    className={isScrolled ? "text-crimson" : "text-white drop-shadow-lg"}
-                                >
-                                    {/* Decorative top element */}
-                                    <path
-                                        d="M50 8 L55 15 L50 12 L45 15 Z"
-                                        fill="currentColor"
-                                    />
-                                    {/* Scale balance beam */}
-                                    <rect x="20" y="28" width="60" height="3" fill="#B37F34" />
-                                    {/* Left scale plate */}
-                                    <path
-                                        d="M15 35 L25 35 L28 55 L12 55 Z"
-                                        fill="#B37F34"
-                                    />
-                                    <line x1="20" y1="28" x2="20" y2="35" stroke="#B37F34" strokeWidth="2" />
-                                    {/* Right scale plate */}
-                                    <path
-                                        d="M75 35 L85 35 L88 55 L72 55 Z"
-                                        fill="#B37F34"
-                                    />
-                                    <line x1="80" y1="28" x2="80" y2="35" stroke="#B37F34" strokeWidth="2" />
-                                    {/* Center pillar - H */}
-                                    <rect x="47" y="18" width="6" height="70" fill="currentColor" />
-                                    {/* H crossbar */}
-                                    <rect x="35" y="50" width="30" height="5" fill="currentColor" />
-                                    {/* Left P pillar */}
-                                    <rect x="35" y="35" width="6" height="50" fill="currentColor" />
-                                    {/* Right P pillar */}
-                                    <rect x="59" y="35" width="6" height="50" fill="currentColor" />
-                                    {/* P curves */}
-                                    <path
-                                        d="M35 35 Q35 25 45 25 Q55 25 55 35"
-                                        stroke="currentColor"
-                                        strokeWidth="5"
-                                        fill="none"
-                                    />
-                                    <path
-                                        d="M45 35 Q45 30 50 30 Q55 30 55 35"
-                                        stroke="currentColor"
-                                        strokeWidth="3"
-                                        fill="none"
-                                    />
-                                </svg>
+                            <div className="relative h-12 w-12">
+                                <Image
+                                    src={isScrolled ? "/images/logo-main.png" : "/images/logo-white.png"}
+                                    alt="Harun Logo"
+                                    fill
+                                    className={cn(
+                                        "object-contain",
+                                        isScrolled && "mix-blend-multiply"
+                                    )}
+                                    priority
+                                />
                             </div>
                             <div className="flex flex-col">
                                 <span className={cn(
